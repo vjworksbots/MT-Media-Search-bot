@@ -27,11 +27,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**♦️ READ THIS INSTRUCTION ♦️✪ഫയലുകൾ ലഭിക്കുന്നതിനായി  നിങ്ങൾ ഞങ്ങളുടെ ചാനലിൽ join ചെയ്യണം ശേഷം refresh button അമർത്തുക ✪ You Need To Join Our Channel and Press Refresh Button to get the File.!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                            InlineKeyboardButton("⭕️Join Channel⭕️", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -76,7 +76,7 @@ async def filter(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
+                [InlineKeyboardButton(text="📃Pages 1/1",callback_data="pages")]
             )
             poster=None
             if API_KEY:
@@ -85,7 +85,7 @@ async def filter(client, message):
                 await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
