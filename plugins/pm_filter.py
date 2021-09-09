@@ -82,7 +82,7 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
                 await message.reply_text(f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
@@ -103,7 +103,7 @@ async def filter(client, message):
         if poster:
             await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -121,7 +121,7 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = f"🎻[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
@@ -146,9 +146,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -164,9 +164,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>Move {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>നിങ്ങൾ ചോദിച്ച {search} ‌എന്ന സിനിമ താഴെ ഉണ്ട് ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് ഡൌൺലോഡ് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
@@ -273,11 +273,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
-                    InlineKeyboardButton('Source Code', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('🔰Channel🔰', url='https://t.me/ottmovies_updates'),
+                    InlineKeyboardButton('🎭Group🎭', url='https://t.me/VJcinemacorner_18')
                 ]
                 ]
-            await query.message.edit(text=f"<b>Developer : <a href='https://github.com/subinps'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='{TUTORIAL}'>Click here</a>\nUpdate Channel : <a href='https://t.me/Mo_Tech_YT'>Mo Tech YT</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=f"<b>💞Devoloper💞 : <a href='https://t.me/Achu_vj'>അച്ചു Vj</a>\nLanguage : മലയാളം🤭\n😎Source Code😎 :സാധനം പുറത്ത് കൊടുക്കുന്നില്ല കേട്ടോ 😁\n🔰Channel🔰 : <a href='https://t.me/ottmovies_updates'>📽️OTT UPDATES📽️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -345,4 +345,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
+        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀ഇത്‌ നീ സെർച്ച്‌ ചെയ്തതല്ല🤨",show_alert=True)
