@@ -67,10 +67,10 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔰CHANNEL🔰', url='https://t.me/ottmovies_updates')
+                        InlineKeyboardButton('🔰CHANNEL🔰', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1')
                     ],
                     [
-                        InlineKeyboardButton('🎭GROUP🎭', url='https://t.me/VJcinemacorner_18')
+                        InlineKeyboardButton('🎭GROUP🎭', url='https://t.me/PCLinks')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -102,8 +102,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔰Channel🔰", url='https://t.me/ottmovies_updates'),
-                        InlineKeyboardButton("🎭Group🎭", url="https://t.me/VJcinemacorner_18")
+                        InlineKeyboardButton("🔰Channel🔰", url='https://t.me/joinchat/b2crtyaFjLRiMDQ1'),
+                        InlineKeyboardButton("🎭Group🎭", url="https://t.me/PCLinks")
                     ],
                     [
                         InlineKeyboardButton("🎻About🎻", callback_data="about")
@@ -195,8 +195,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🔰Channel🔰', url='https://t.me/ottmovies_updates'),
-            InlineKeyboardButton('🎭Group🎭', url='https://t.me/VJcinemacorner_18')
+            InlineKeyboardButton('🔰Channel🔰', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1'),
+            InlineKeyboardButton('🎭Group🎭', url='https://t.me/PCLinks')
         ]
         ]
-    await message.reply(text=f"<b>Developer : <a href='https://t.me/Achu_vj'>👉Achu Botz👈</a>\nLanguage : മലയാളം😁\n😎Source Code😎 : പുറത്ത് കൊടുക്കുന്നില്ല🤧\n💞Channel💞 : <a href='https://t.me/ottmovies_updates'>NEW OTT UPDATES</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text=f"<b>Developer : <a href='https://t.me/Sanoob_Achu_18'>👉Achu Botz👈</a>\nLanguage : മലയാളം😁\n😎Source Code😎 : പുറത്ത് കൊടുക്കുന്നില്ല🤧\n💞Channel💞 : <a href='https://t.me/ottmovies_updates'>NEW OTT UPDATES</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
