@@ -102,12 +102,19 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔰Channel🔰", url='https://t.me/joinchat/b2crtyaFjLRiMDQ1'),
-                        InlineKeyboardButton("🎭Group🎭", url="https://t.me/PCLinks")
+                        InlineKeyboardButton("➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕", url= "https://t.me/VjimdbotFilter_bot?startgroup=true")
                     ],
                     [
-                        InlineKeyboardButton("🎻About🎻", callback_data="about")
-                    ]
+                        InlineKeyboardButton("𝙎𝙚𝙖𝙧𝙘𝙝 𝙝𝙚𝙧𝙚🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("𝘼𝙣𝙮 𝙃𝙚𝙡𝙥 🛠️", url="https://t.me/Sanoob_Achu_18")
+                    ],
+                    [
+                        InlineKeyboardButton("𝙈𝙮 𝘿𝙚𝙫 🤗", url="https://t.me/Sanoob_Achu_18"),
+                        InlineKeyboardButton("𝘼𝙗𝙤𝙪𝙩 😎", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("❕ 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 ❕", url="https://t.me/Sanoob_Achu_18")
+                    ]    
                 ]
             )
         )
@@ -193,10 +200,10 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
-    buttons = [
-        [
-            InlineKeyboardButton('🔰Channel🔰', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1'),
-            InlineKeyboardButton('🎭Group🎭', url='https://t.me/PCLinks')
-        ]
-        ]
-    await message.reply(text=f"<b>Developer : <a href='https://t.me/Sanoob_Achu_18'>👉Achu Botz👈</a>\nLanguage : മലയാളം😁\n😎Source Code😎 : പുറത്ത് കൊടുക്കുന്നില്ല🤧\n💞Channel💞 : <a href='https://t.me/ottmovies_updates'>NEW OTT UPDATES</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    buttons = [[
+            InlineKeyboardButton('𝐂𝐇𝐀𝐍𝐍𝐄𝐋💗', url='https://t.me/joinchat/AK1vv2n8AZ41NmY1'),
+            InlineKeyboardButton('𝐆𝐑𝐎𝐔𝐏⭕️', url='https://t.me/PCLinks')
+        ],[
+            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒🎻', url='https://t.me/ottmovies_updates')
+        ]]
+    await message.reply(text="<b><u>😁എന്തിനാ മോനെ ഇത്രേം സാഹസം കാണിച്ചത് 📃Source Code📃 ന് വേണ്ടിയാണോ🙄ന്തയാലും ഇവിടെ വരെ വന്നില്ലേ🤔 ചാനലിലും ഗ്രൂപ്പിലുമൊക്കെ ജോയിൻ😛 ചെയ്തിട്ട് പൊക്കോ🚶🤧</u></b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
