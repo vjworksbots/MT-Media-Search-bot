@@ -97,7 +97,7 @@ async def start(bot, cmd):
     else:
         await cmd.reply_photo(
 
-            photo="https://telegra.ph/file/5c8ddb66e9605f3521bfc.jpg",
+            photo="https://telegra.ph/file/7f3cd9a1a2066b694e46b.jpg",
 
             caption=f"<b>Hai</b> {cmd.from_user.mention}  Brooh!🙋,\n\n<b>I'm[☞ 𝙸𝙼𝙳𝙱 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 🤖](https://t.me/VjimdbotFilter_bot) or you can call me as Auto-Filter Bot You Can Use Me As A Auto-filter in Your Group</b> ....\n\n<b>Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There</b>...🤓\n\n<b>©️MᴀɪɴᴛᴀɪɴᴇD Bʏ</b>   <a href=tg://user?id=1946514705> Sanoop_Ｔｇ♨</a>",
 
