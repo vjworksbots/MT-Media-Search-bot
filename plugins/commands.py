@@ -67,10 +67,10 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔰CHANNEL🔰', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1')
+                        InlineKeyboardButton('🎬 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🎬', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1')
                     ],
                     [
-                        InlineKeyboardButton('🎭GROUP🎭', url='https://t.me/PCLinks')
+                        InlineKeyboardButton('👥 𝑮𝒓𝒐𝒖𝒑 👥', url='https://t.me/PCLinks')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -97,25 +97,25 @@ async def start(bot, cmd):
     else:
         await cmd.reply_photo(
 
-            photo="https://telegra.ph/file/7f3cd9a1a2066b694e46b.jpg",
+            photo="https://telegra.ph/file/6d25e2b5f44b2903b1620.jpg",
 
-            caption=f"<b>Hai</b> {cmd.from_user.mention}  Brooh!🙋,\n\n<b>I'm[☞ 𝙸𝙼𝙳𝙱 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 🤖](https://t.me/VjimdbotFilter_bot) or you can call me as Auto-Filter Bot You Can Use Me As A Auto-filter in Your Group</b> ....\n\n<b>Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There</b>...🤓\n\n<b>©️MᴀɪɴᴛᴀɪɴᴇD Bʏ</b>   <a href=tg://user?id=1946514705> Sanoop_Ｔｇ♨</a>",
+            caption=f"<b>Hai</b> {cmd.from_user.mention}  Guys!🙋,\n\n<b>I'm[☞ 𝙸𝙼𝙳𝙱 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 🤖](https://t.me/VjimdbotFilter_bot) or you can call me as Auto-Filter Bot You Can Use Me As A Auto-filter in Your Group</b> ....\n\n<b>Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There</b>...🤓\n\n<b>©️𝑴𝒂𝒊𝒏𝒕𝒂𝒊𝒏𝒆𝒅 𝒃𝒚</b>   <a href=tg://user?id=1946514705> 𝑨𝒄𝒉𝒖 𝑽𝒋♨</a>",
 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕", url= "https://t.me/VjimdbotFilter_bot?startgroup=true")
+                        InlineKeyboardButton("➕ 𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 ➕", url= "https://t.me/VjimdbotFilter_bot?startgroup=true")
                     ],
                     [
-                        InlineKeyboardButton("𝙎𝙚𝙖𝙧𝙘𝙝 𝙝𝙚𝙧𝙚🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("𝘼𝙣𝙮 𝙃𝙚𝙡𝙥 🛠️", url="https://t.me/Sanoob_Achu_18")
+                        InlineKeyboardButton("𝑺𝒆𝒂𝒓𝒄𝒉 𝑯𝒆𝒓𝒆🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("𝑨𝒏𝒚 𝑯𝒆𝒍𝒑 🛠️", url="https://t.me/Sanoob_Achu_18")
                     ],
                     [
-                        InlineKeyboardButton("𝙈𝙮 𝘿𝙚𝙫 🤗", url="https://t.me/Sanoob_Achu_18"),
-                        InlineKeyboardButton("𝘼𝙗𝙤𝙪𝙩 😎", callback_data="about")
+                        InlineKeyboardButton("𝑴𝒚 𝑫𝒆𝒗 🤗", url="https://t.me/Sanoob_Achu_18"),
+                        InlineKeyboardButton("𝑨𝒃𝒐𝒖𝒕 😎", callback_data="about")
                     ],
                     [
-                        InlineKeyboardButton("❕ 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 ❕", url="https://t.me/Sanoob_Achu_18")
+                        InlineKeyboardButton("❕ 𝑯𝒐𝒘 𝑻𝒐 𝑼𝒔𝒆 𝑴𝒆 ❕", url="https://t.me/Sanoob_Achu_18")
                     ]    
                 ]
             )
