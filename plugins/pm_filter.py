@@ -92,7 +92,7 @@ async def filter(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="🚀 𝙂𝙊 𝙏𝙊 𝙉𝙀𝙓𝙏 𝙋𝘼𝙂𝙀 🚀",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="🚀 𝑮𝒐 𝑻𝒐 𝑵𝒆𝒙𝒕 𝑷𝒂𝒈𝒆 🚀",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"⭕ Pages 1/{data['total']}",callback_data="pages")]
@@ -155,7 +155,7 @@ async def group(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="🚀 𝙂𝙊 𝙏𝙊 𝙉𝙀𝙓𝙏 𝙋𝘼𝙂𝙀 🚀",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="🚀 𝑮𝒐 𝑻𝒐 𝑵𝒆𝒙𝒕 𝑷𝒂𝒈𝒆 🚀",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"⭕ Pages 1/{data['total']}",callback_data="pages")]
@@ -273,11 +273,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('🔰Channel🔰', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1'),
-                    InlineKeyboardButton('🎭Group🎭', url='https://t.me/PCLinks')
+                    InlineKeyboardButton('🎬 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🎬', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1'),
+                    InlineKeyboardButton('👥 𝑮𝒓𝒐𝒖𝒑 👥', url='https://t.me/PCLinks')
                 ]
                 ]
-            await query.message.edit(text=f"<b>💞Devoloper💞 : <a href='https://t.me/Sanoob_Achu_18'>അച്ചു Vj</a>\nLanguage : മലയാളം🤭\n😎Source Code😎 :സാധനം പുറത്ത് കൊടുക്കുന്നില്ല കേട്ടോ 😁\n🔰Channel🔰 : <a href='https://t.me/ottmovies_updates'>📽️OTT UPDATES📽️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=f"<b>💞𝑫𝒆𝒗𝒐𝒍𝒐𝒑𝒆𝒓💞 : <a href='https://t.me/Sanoob_Achu_18'>𝑨𝒄𝒉𝒖 𝑽𝒋</a>\nLanguage : മലയാളം🤭\n😎Source Code😎 :സാധനം പുറത്ത് കൊടുക്കുന്നില്ല കേട്ടോ 😁\n🎬 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🎬 : <a href='https://t.me/ottmovies_updates'>🎬 𝑶𝑻𝑻 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 🎬</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
