@@ -11,21 +11,21 @@ logger = logging.getLogger(__name__)
 ADMINS = int(os.environ.get("ADMINS", 1745047302))
 
 PHOTO = [
-    "https://telegra.ph/file/a215834295195d610949c.jpg",
-    "https://telegra.ph/file/140299fcd89dbd4a0ba92.jpg",
-    "https://telegra.ph/file/59fefdf363fd828595589.jpg",
-    "https://telegra.ph/file/2b2518ccd770b82ceef03.jpg",
-    "https://telegra.ph/file/c6f438023c60b1845552e.jpg",
-    "https://telegra.ph/file/5ff727c611adfdb209a44.jpg",
-    "https://telegra.ph/file/ce9d7001e57ad2eab84e0.jpg",
-    "https://telegra.ph/file/10ef288e99b6c7beca9ee.jpg",
-    "https://telegra.ph/file/785106a73c34f984d83c9.jpg",
-    "https://telegra.ph/file/49778209084d2eba94152.jpg",
-    "https://telegra.ph/file/e9b562bef56458ff1df68.jpg",
-    "https://telegra.ph/file/bd7538e39549aa639d692.jpg",
-    "https://telegra.ph/file/6fbb764c3202a5560e8e1.jpg",
-    "https://telegra.ph/file/3b5591a7020591aff9d79.jpg",
-    "https://telegra.ph/file/99a2a5b8be0445ebd23ad.jpg"
+    "https://telegra.ph/file/e5f1bc50702a09de0509d.jpg",
+    "https://telegra.ph/file/63317e41353ec9ea37b16.jpg",
+    "https://telegra.ph/file/dca68778d63eac097e44f.jpg",
+    "https://telegra.ph/file/57f3e9073afdb412d3245.jpg",
+    "https://telegra.ph/file/4da354c80921ae02c2e1a.jpg",
+    "https://telegra.ph/file/6598a7416ac15bc1f2be7.jpg",
+    "https://telegra.ph/file/1e235b970662d542d2ee7.jpg",
+    "https://telegra.ph/file/4c8b10f25d9014d8126d9.jpg",
+    "https://telegra.ph/file/0e4ae128a5b4bbf42617a.jpg",
+    "https://telegra.ph/file/f8078fa42fd2e8cef2893.jpg",
+    "https://telegra.ph/file/4565f5197c6e68dfccec4.jpg",
+    "https://telegra.ph/file/b753896582001a7091773.jpg",
+    "https://telegra.ph/file/beebf5a0da5059ab86df7.jpg",
+    "https://telegra.ph/file/ffb7d9468a49abdd3934a.jpg",
+    "https://telegra.ph/file/a5a36051cfa970bbbce29.jpg"
 ]
 
 @Client.on_message(filters.command("start"))
@@ -52,7 +52,7 @@ async def start(bot, cmd):
                    reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰Join Channel🔰", url=invite_link.invite_link)
+                                InlineKeyboardButton("⭕️Join Channel⭕️", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄Restart🔃", callback_data=f"checksub#{file_id}")
@@ -87,10 +87,10 @@ async def start(bot, cmd):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [[
-            InlineKeyboardButton('♻️Channel', url='https://t.me/mcnewmovies'),
-            InlineKeyboardButton('Group⭕️', url='https://t.me/Movies_Club_2019')
+            InlineKeyboardButton('🎬𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎬', url='https://t.me/PCLinks_1'),
+            InlineKeyboardButton('👥𝑮𝒓𝒐𝒖𝒑👥', url='https://t.me/PCLinks')
           ],[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url= 'https://t.me/Imdbfilter_bot?startgroup=true')
+            InlineKeyboardButton('🎬𝑵𝒆𝒘 𝑹𝒆𝒍𝒆𝒂𝒔𝒆🎬', url= 'https://t.me/joinchat/b2crtyaFjLRiMDQ1')
         ]]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
@@ -121,15 +121,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                     [
                     [
-                        InlineKeyboardButton("➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url= "https://t.me/Imdbfilter_bot?startgroup=true")
+                        InlineKeyboardButton("💞𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓💞", url= "https://t.me/Sanoob_Achu_18")
                     ],
                     [
-                        InlineKeyboardButton("🔰 Group", url="https://t.me/Movies_Club_2019"),
-                        InlineKeyboardButton("📃 Channel", url="https://t.me/mcnewmovies")
+                        InlineKeyboardButton("👥𝑮𝒓𝒐𝒖𝒑👥", url="https://t.me/PCLinks"),
+                        InlineKeyboardButton("🎬𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎬", url="https://t.me/PCLinks_1")
                     ],
                     [
-                        InlineKeyboardButton("🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋", url="https://t.me/Myfreak123"),
-                        InlineKeyboardButton("😊 𝖠𝖻𝗈𝗎𝗍", url="https://t.me/mcallmovies/46")
+                        InlineKeyboardButton("👥𝑮𝒓𝒐𝒖𝒑 𝑨𝒅𝒎𝒊𝒏👥", url="https://t.me/Myfreak123"),
+                        InlineKeyboardButton("👥𝑮𝒓𝒐𝒖𝒑 𝑶𝒘𝒏𝒆𝒓👥", url="https://t.me/Sanoob_Achu_18")
                     ]    
                 ]
             )
@@ -217,14 +217,14 @@ async def delete(bot, message):
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
     buttons = [[
-            InlineKeyboardButton('♻️𝐒𝐄𝐑𝐈𝐄𝐒', url='https://t.me/MoviesClubSeriesonly'),
-            InlineKeyboardButton('𝐆𝐑𝐎𝐔𝐏⭕️', url='https://t.me/Movies_Club_2019')
+            InlineKeyboardButton('♻️𝐒𝐄𝐑𝐈𝐄𝐒', url='https://t.me/PCSeries_Group'),
+            InlineKeyboardButton('𝐆𝐑𝐎𝐔𝐏⭕️', url='https://t.me/PCLinks')
         ],[
-            InlineKeyboardButton('🎞️𝐂𝐇𝐀𝐍𝐍𝐄𝐋🎞️', url='https://t.me/mcallmovies')
+            InlineKeyboardButton('🎞️𝐂𝐇𝐀𝐍𝐍𝐄𝐋🎞️', url='https://t.me/PCLinks_1')
         ],[
-            InlineKeyboardButton('📍𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/mcallmovies'),
-            InlineKeyboardButton('𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄💿', url='https://t.me/mcnewmovies')
+            InlineKeyboardButton('📍𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/ottmovies_updates'),
+            InlineKeyboardButton('𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄💿', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1')
         ],[
-            InlineKeyboardButton('📀𝐂𝐀𝐌 𝐏𝐑𝐈𝐍𝐓𝐒📀', url='https://t.me/MCmoviesall')
+            InlineKeyboardButton('📀𝐂𝐀𝐌 𝐏𝐑𝐈𝐍𝐓𝐒📀', url='https://t.me/PCTheatrePrintLinks')
         ]]
     await message.reply(text="<b><u>😁എന്തിനാ മോനെ ഇത്രേം സാഹസം കാണിച്ചത് 📃Source Code📃 ന് വേണ്ടിയാണോ🙄ന്തയാലും ഇവിടെ വരെ വന്നില്ലേ🤔 ചാനലിലും ഗ്രൂപ്പിലുമൊക്കെ ജോയിൻ😛 ചെയ്തിട്ട് പൊക്കോ🚶🤧</u></b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
