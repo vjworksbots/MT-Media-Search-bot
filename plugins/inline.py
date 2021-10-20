@@ -4,7 +4,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQue
 
 from utils import get_search_results, is_subscribed
 from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
-from info import TUTORIAL
 
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
@@ -89,14 +88,12 @@ async def answer(bot, query):
 
 
 def get_reply_markup(query):
-    buttons = [
-                    [
-                        InlineKeyboardButton('🎬 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🎬', url='https://t.me/joinchat/b2crtyaFjLRiMDQ1')
-                    ],
-                    [
-                        InlineKeyboardButton('👥 𝑮𝒓𝒐𝒖𝒑 👥', url='https://t.me/PCLinks')
-                    ]
-                    ]
+    buttons = [[
+            InlineKeyboardButton('♻️Channel', url='https://t.me/mcnewmovies'),
+            InlineKeyboardButton('Group⭕️', url='https://t.me/Movies_Club_2019')
+          ],[
+            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url= 'https://t.me/Imdbfilter_bot?startgroup=true')
+        ]]
     return InlineKeyboardMarkup(buttons)
 
 
@@ -110,3 +107,4 @@ def get_size(size):
         i += 1
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
+
