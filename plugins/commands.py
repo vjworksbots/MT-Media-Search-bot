@@ -128,8 +128,8 @@ async def start(bot, cmd):
                         InlineKeyboardButton("🎬𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎬", url="https://t.me/PCLinks_1")
                     ],
                     [
-                        InlineKeyboardButton("👥𝑮𝒓𝒐𝒖𝒑 𝑨𝒅𝒎𝒊𝒏👥", url="https://t.me/Myfreak123"),
-                        InlineKeyboardButton("👥𝑮𝒓𝒐𝒖𝒑 𝑶𝒘𝒏𝒆𝒓👥", url="https://t.me/Sanoob_Achu_18")
+                        InlineKeyboardButton("👥𝑺𝒆𝒓𝒊𝒆𝒔 𝑮𝒓𝒐𝒖𝒑👥", url="https://t.me/PCSeries_Group"),
+                        InlineKeyboardButton("👥𝑺𝒆𝒓𝒊𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍👥", url="https://t.me/PC_Serieschannel")
                     ]    
                 ]
             )
